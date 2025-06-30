@@ -27,7 +27,7 @@ export default function Button({ img, icon, txt, mode,isScroll }) {
         </div>
       )}
       {icon && (
-        <span className={`img border ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-2xl`}>
+        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-2xl`}>
           {icon}
         </span>
       )}

@@ -1,11 +1,11 @@
 import React from 'react'
-import hero from '@/app/assets/images/hero.png';
+import about from '@/app/assets/images/about.png';
 import Title from '../util/Title';
 import Link from 'next/link';
 
 export default function About() {
       const styles = {
-        backgroundImage: `url(${hero.src})`,
+        backgroundImage: `url(${about.src})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
