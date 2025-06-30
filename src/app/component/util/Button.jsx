@@ -29,11 +29,11 @@ export default function Button({ img, icon, txt, mode,isScroll,type }) {
         </div>
       )}
       {icon && (
-        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-2xl`}>
+        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-base lg:text-2xl`}>
           {icon}
         </span>
       )}
-      <span className="font-sportR font-normal text-base">{txt}</span>
+      <span className="font-sportR font-normal text-xs lg:text-base">{txt}</span>
     </button>
       :
          <a
@@ -49,11 +49,11 @@ export default function Button({ img, icon, txt, mode,isScroll,type }) {
         </div>
       )}
       {icon && (
-        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-2xl`}>
+        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-base lg:text-2xl`}>
           {icon}
         </span>
       )}
-      <span className="font-sportR font-normal text-base">{txt}</span>
+      <span className="font-sportR font-normal text-xs lg:text-base">{txt}</span>
     </a>
     
  
