@@ -1,15 +1,39 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Sport Regular";
+  src: url('/assets/fonts/SportingGrotesque-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: "Sport Bold";
+  src: url('/assets/fonts/SportingGrotesque-Bold.otf') format('opentype');
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-sport-regular: "Sport Regular", sans-serif;
+  --font-sport-bold: "Sport Bold", sans-serif;
+
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-theme-bg: #000000;
+  --color-theme-hvr-brdr: #f1f1f1;
+  --color-theme-hvr-bg: #f1f1f1;
+  --color-theme-hvr-txt: #f1f1f1;
+  --color-theme-brdr: #000000;
+  --color-theme-light-brdr: #ffffff;
+  --color-theme-text: #000000;
+  --color-theme-secondary: #C5FFEE;
+  --color-theme-main: #C5FF41;
+  --color-theme-light-text: #ffffff;
+  --color-theme-sub-text: #757575;
+  --color-theme-sub-light-text: #E4E4E4;
+  --font-sportR: var(--font-sport-regular);
+  --font-sportB: var(--font-sport-bold); 
 }
 
 @media (prefers-color-scheme: dark) {
