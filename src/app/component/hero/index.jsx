@@ -16,7 +16,7 @@ export default function Hero() {
     <div className='hero pt-24 sm:pt-32' style={styles}>
       <div className="container px-10 mx-auto">
         <div className="py-10 sm:py-20">
-          <h1 className='text-2xl xl:text-5xl 2xl:text-7xl font-sportB font-bold text-left text-theme-text leading-[2.6] lg:leading-[2.2]'>Trusted <span className='bg-theme-bg text-theme-light-text py-1 px-3 rounded-2xl'>Partner</span> for <span className='block'> Your Website <span className='bg-theme-bg text-theme-light-text py-1 px-3 rounded-2xl'>Develop.</span></span></h1>
+          <h1 className='text-xl sm:text-2xl xl:text-5xl 2xl:text-7xl font-sportB font-bold text-left text-theme-text leading-[2.6] lg:leading-[2.2]'>Trusted <span className='bg-theme-bg text-theme-light-text py-1 px-3 rounded-2xl'>Partner</span> for <span className='block'> Your Website <span className='bg-theme-bg text-theme-light-text py-1 px-3 rounded-2xl'>Develop.</span></span></h1>
            <div className="flex mt-14">
             <div className="w-1/5">
                 <div className="mini_scle relative top-14 lg:top-0 lg:-left-20 -rotate-90 pl-10">
