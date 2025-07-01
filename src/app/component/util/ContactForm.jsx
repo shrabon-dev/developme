@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function ContactForm() {
   return (
     <>
-        <form className='max-w-2/3 mx-auto bg-theme-bg p-10 rounded-4xl '>
+        <form className='xl:max-w-2/3 mx-auto bg-theme-bg p-10 rounded-4xl '>
             <input type="text" placeholder='Write your name ' className='w-full px-4 pl-0 placeholder:text-sm py-2 text-theme-sub-text focus:border-theme-main  focus:outline-0 mb-4 placeholder:italic placeholder:text-theme-sub-text text-base border-b border-theme-hvr-brdr/50 font-sportR placeholder:font-sportR' />
             <input type="email" placeholder='Write your email ' className='w-full px-4 pl-0 placeholder:text-sm py-2 text-theme-sub-text focus:border-theme-main focus:outline-0 mb-4 placeholder:italic placeholder:text-theme-sub-text text-base border-b border-theme-hvr-brdr/50 font-sportR placeholder:font-sportR' />
 
@@ -20,9 +20,9 @@ export default function ContactForm() {
                   <p className='text-sm font-sportB text-theme-light-text'>@williamrey</p>
                   <div className="icons flex items-center gap-2 ">
                     <span className='block w-10 h-[1px] bg-theme-hvr-bg rounded-full'></span>
-                    <Link className='text-2xl text-theme-light-text' href={'/'}><FaFacebook/></Link>
-                    <Link className='text-2xl text-theme-light-text' href={'/'}><FaTwitter/></Link>
-                    <Link className='text-2xl text-theme-light-text' href={'/'}><FaInstagram/></Link>
+                    <Link className='text-lg md:text-2xl text-theme-light-text' href={'/'}><FaFacebook/></Link>
+                    <Link className='text-lg md:text-2xl text-theme-light-text' href={'/'}><FaTwitter/></Link>
+                    <Link className='text-lg md:text-2xl text-theme-light-text' href={'/'}><FaInstagram/></Link>
                   </div>
                 </div>
         </form>

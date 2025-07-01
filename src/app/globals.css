@@ -48,3 +48,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.swiper {
+  padding: 20px !important;
+}
+
+@layer utilities {
+  .menu_style{
+    @apply font-sportR after:w-0 after:h-[3px] after:rounded-full after:ease-linear after:transition-all hover:after:w-full after:bg-theme-main after:content-[''] after:absolute after:bottom-0 after:left-0 relative font-normal text-base md:text-xs lg:text-base
+  }
+}

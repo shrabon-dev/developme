@@ -11,12 +11,12 @@ export default function MyWorkProcess() {
      <section className='why_choose_me'>
         <div className="container px-10 bg-[#141414] p-10 rounded-4xl mx-auto">
            
-            <div className="flex items-center">
-                <div className="w-1/3">
+            <div className=" lg:flex items-center">
+                <div className="w-full lg:w-1/3">
                   <Title text={'My Work Process'}/>
                 </div>
-                <div className="w-2/3">
-                    <h4 className='text-6xl text-theme-light-text leading-[1.8] font-sportB font-bold'>My Work Process</h4>
+                <div className="w-full lg:w-2/3">
+                    <h4 className='text-4xl md:text-6xl text-theme-light-text leading-[1.8] font-sportB font-bold'>My Work Process</h4>
                 </div>
             </div>
             {/* <div className="navs_prevs text-end flex justify-end gap-4 mt-10">
