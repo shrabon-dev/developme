@@ -9,7 +9,7 @@ export default function MyWorkProcess() {
   return (
     <>
      <section className='why_choose_me'>
-        <div className="container px-10 bg-[#141414] p-10 rounded-4xl mx-auto">
+        <div className="container sm:px-10 bg-[#141414] p-5 sm:p-10 rounded-4xl mx-auto">
            
             <div className=" lg:flex items-center">
                 <div className="w-full lg:w-1/3">

@@ -13,38 +13,38 @@ export default function Footer() {
                 </div>
                 <div className="lg:w-3/5">
                    <h3 className='font-sportB text-2xl mt-5 lg:pt-0 lg:text-6xl text-theme-light-text font-bold'>As you can</h3>
-                    <div className="flex flex-wrap mt-20">
+                    <div className="sm:flex flex-wrap mt-10 md:mt-20">
                         <div className="menu_box w-1/2 md:w-1/3">
-                            <h6 className='font-sportB text-theme-sub-text font-bold  text-xs  md:text-base '>Say hello</h6>
-                            <ul className='flex flex-col gap-5 mt-5'>
-                                <li><a className='font-sportR font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>HELLO@DEVLOP.ME.COM</a></li>
-                                <li><a className='font-sportR font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>MAHBUBUL@ME.COM</a></li> 
+                            <h6 className='font-sportB text-theme-sub-text font-bold  text-[8px] sm:text-xs  md:text-base '>Say hello</h6>
+                            <ul className='flex flex-col gap-1 sm:gap-5 sm:mt-5'>
+                                <li><a className='font-sportR font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>HELLO@DEVLOP.ME.COM</a></li>
+                                <li><a className='font-sportR font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>MAHBUBUL@ME.COM</a></li> 
                             </ul>
                         </div>
-                        <div className="menu_box  w-1/2 md:w-1/3 pl-10">
-                            <h6 className='font-sportB text-theme-sub-text font-bold  text-xs  md:text-base '>Menu</h6>
-                            <ul className='flex flex-col gap-5 mt-5'>
-                                <li><a className='font-sportR font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>Home</a></li>
-                                <li><a className='font-sportR font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>About</a></li>
-                                <li><a className='font-sportR font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>Portfolio</a></li>
-                                <li><a className='font-sportR font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>Blog</a></li>
+                        <div className="menu_box  w-1/2 md:w-1/3 sm:pl-10 mt-5 sm:mt-0">
+                            <h6 className='font-sportB text-theme-sub-text font-bold  text-[8px] sm:text-xs  md:text-base '>Menu</h6>
+                            <ul className='flex flex-col gap-1 sm:gap-5 sm:mt-5'>
+                                <li><a className='font-sportR font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>Home</a></li>
+                                <li><a className='font-sportR font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>About</a></li>
+                                <li><a className='font-sportR font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>Portfolio</a></li>
+                                <li><a className='font-sportR font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>Blog</a></li>
                             </ul>
                         </div>
-                        <div className="menu_box  w-1/2 md:w-1/3">
-                            <h6 className='font-sportB text-theme-sub-text font-bold  text-xs  md:text-base '>Social</h6>
-                            <ul className='flex flex-col gap-5 mt-5'>
-                                <li><a className='font-sportB font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>TWITTER</a></li>
-                                <li><a className='font-sportB font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>INSTAGRAM</a></li>
-                                <li><a className='font-sportB font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>FACEBOOK</a></li>
-                                <li><a className='font-sportB font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>BEHANCE</a></li>
-                                <li><a className='font-sportB font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>DRIBBBLE</a></li>
+                        <div className="menu_box  w-1/2 md:w-1/3 mt-5 sm:mt-0">
+                            <h6 className='font-sportB text-theme-sub-text font-bold  text-[8px] sm:text-xs  md:text-base '>Social</h6>
+                            <ul className='flex flex-col gap-1 sm:gap-5 sm:mt-5'>
+                                <li><a className='font-sportB font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>TWITTER</a></li>
+                                <li><a className='font-sportB font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>INSTAGRAM</a></li>
+                                <li><a className='font-sportB font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>FACEBOOK</a></li>
+                                <li><a className='font-sportB font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>BEHANCE</a></li>
+                                <li><a className='font-sportB font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>DRIBBBLE</a></li>
                             </ul>
                         </div>
-                        <div className="menu_box  w-1/2 md:w-1/3">
-                            <h6 className='font-sportB text-theme-sub-text font-bold  text-xs  md:text-base '>Call</h6>
-                            <ul className='flex flex-col gap-5 mt-5'>
-                                <li><a className='font-sportB font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>+784549 4981 00</a></li>
-                                <li><a className='font-sportB font-normal  text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>+8845 0100 211</a></li> 
+                        <div className="menu_box  w-1/2 md:w-1/3 mt-5 sm:mt-0">
+                            <h6 className='font-sportB text-theme-sub-text font-bold  text-[8px] sm:text-xs  md:text-base '>Call</h6>
+                            <ul className='flex flex-col gap-1 sm:gap-5 sm:mt-5'>
+                                <li><a className='font-sportB font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>+784549 4981 00</a></li>
+                                <li><a className='font-sportB font-normal  text-[8px] sm:text-xs  md:text-base  text-theme-sub-light-text uppercase' href={'/'}>+8845 0100 211</a></li> 
                             </ul>
                         </div>
                     </div>

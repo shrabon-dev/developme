@@ -16,7 +16,7 @@ export default function WhyChoose() {
             <Title text={'Why Choose Me'}/>
             <div className="lg:flex">
                 <div className="lg:w-1/2">
-                    <h4 className='text-4xl text-theme-light-text leading-[1.8] font-sportB font-bold'>My Extensive <br /> List of Skills</h4>
+                    <h4 className='text-3xl sm:text-4xl text-theme-light-text leading-[1.8] font-sportB font-bold'>My Extensive <br /> List of Skills</h4>
                 </div>
                 <div className="lg:w-1/2">
                 <p className='font-sportR lg:max-w-2/3 ml-auto text-base text-theme-sub-text lg:border-b border-theme-sub-text'>Building the worlds best marketing Your trusted partner for strategy, design, and dev.</p>

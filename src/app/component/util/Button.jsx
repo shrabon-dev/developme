@@ -29,7 +29,7 @@ export default function Button({ img, icon, txt, mode,isScroll,type }) {
         </div>
       )}
       {icon && (
-        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-base lg:text-2xl`}>
+        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-xs sm:text-base lg:text-2xl`}>
           {icon}
         </span>
       )}
@@ -49,7 +49,7 @@ export default function Button({ img, icon, txt, mode,isScroll,type }) {
         </div>
       )}
       {icon && (
-        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-base lg:text-2xl`}>
+        <span className={`img border-2 ${iconHoverBg} ${iconHoverBorder} ${iconHoverText} duration-300 ${borderColor} rounded-full p-2 text-xs sm:text-base lg:text-2xl`}>
           {icon}
         </span>
       )}
