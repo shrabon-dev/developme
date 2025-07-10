@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Title from '../util/Title'
 import contact from '@/app/assets/images/contact.png';
