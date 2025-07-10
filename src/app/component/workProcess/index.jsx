@@ -1,11 +1,41 @@
+'use client'
 import React from 'react'
 import Title from '../util/Title'
 import { DiReact } from "react-icons/di";
-import Image from 'next/image';
-import arrowLight from '@/app/assets/images/arrow_light.png';
 import WorkProcessCard from '../util/workProcessCard';
+import TextScale from '../animations/TextScale';
+import { easeInOut, motion, scale } from 'framer-motion';
 
 export default function MyWorkProcess() {
+        const container = {
+            hidden:{
+                y:60,
+                opacity:0,
+            },
+            visible:{
+                y:0,
+                opacity:1,
+                transition: {
+                    duration:.8,
+                    staggerChildren: 0.05,
+                    ease:easeInOut,
+                }
+            }
+        }
+
+        const item = {
+            hidden:{
+                y:60,
+                opacity:0,
+            },
+            visible:{
+                y:0,
+                opacity:1,
+                transition: {
+                    duration:.5,
+                }
+            }
+        }
   return (
     <>
      <section className='why_choose_me'>
@@ -16,7 +46,7 @@ export default function MyWorkProcess() {
                   <Title text={'My Work Process'}/>
                 </div>
                 <div className="w-full lg:w-2/3">
-                    <h4 className='text-4xl md:text-6xl text-theme-light-text leading-[1.8] font-sportB font-bold'>My Work Process</h4>
+                    <h4 className='text-4xl md:text-6xl text-theme-light-text leading-[1.8] font-sportB font-bold'><TextScale text={'My Work Process'}/></h4>
                 </div>
             </div>
             {/* <div className="navs_prevs text-end flex justify-end gap-4 mt-10">
@@ -27,12 +57,12 @@ export default function MyWorkProcess() {
                     <Image className='-rotate-180 block' src={arrowLight} alt='arrow light'/>
                 </button>
             </div> */}
-            <div className="choose_box flex flex-wrap justify-between gap-5 mt-10 ">
-                <WorkProcessCard icon={<DiReact/>} title={'HTML & CSS'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
-                <WorkProcessCard icon={<DiReact/>} title={'Javascript'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
-                <WorkProcessCard icon={<DiReact/>} title={'PHP & Laravel'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
-                <WorkProcessCard icon={<DiReact/>} title={'Webflow'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
-            </div>
+            <motion.div variants={container} initial='hidden' whileInView={'visible'} viewport={{once:1,amount:.6}} className="choose_box flex flex-wrap justify-between gap-5 mt-10 ">
+                <WorkProcessCard variant={item} icon={<DiReact/>} title={'HTML & CSS'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
+                <WorkProcessCard variant={item} icon={<DiReact/>} title={'Javascript'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
+                <WorkProcessCard variant={item} icon={<DiReact/>} title={'PHP & Laravel'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
+                <WorkProcessCard variant={item} icon={<DiReact/>} title={'Webflow'} description={"Every end-to-end project of ours begins with a tEspoke pre-build strateu. From brand ID consultation to in-depth ccxle reviews we're here to set the stage for success."}/>
+            </motion.div>
         </div>
      </section>
     </>

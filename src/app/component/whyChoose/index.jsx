@@ -7,8 +7,39 @@ import Image from 'next/image';
 import arrowLight from '@/app/assets/images/arrow_light.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import TextScale from '../animations/TextScale';
+import PTextFadeUp from '../animations/PTextFadeUp';
+import { motion } from 'framer-motion';
 export default function WhyChoose() {
     const swiperRef = useRef(null);
+    const container = {
+        hidden:{
+            opacity:0,
+            x:100,
+        },
+        visible:{
+            opacity:1,
+            x:0,
+            transition: {
+                duration:.8,
+                staggerChildren: 0.05
+            }
+        }
+    }
+
+    const item = {
+        hidden:{
+            opacity:0,
+            x:100,
+        },
+        visible:{
+            opacity:1,
+            x:0,
+            transition: {
+            duration:.5,
+            }
+        }
+    }
   return (
     <>
      <section className='why_choose_me'>
@@ -16,10 +47,10 @@ export default function WhyChoose() {
             <Title text={'Why Choose Me'}/>
             <div className="lg:flex">
                 <div className="lg:w-1/2">
-                    <h4 className='text-3xl sm:text-4xl text-theme-light-text leading-[1.8] font-sportB font-bold'>My Extensive <br /> List of Skills</h4>
+                    <h4 className='text-3xl sm:text-4xl text-theme-light-text leading-[1.8] font-sportB font-bold'>  <TextScale text={'My Extensive '}/> <br />  <TextScale text={'List of Skills'}/></h4>
                 </div>
                 <div className="lg:w-1/2">
-                <p className='font-sportR lg:max-w-2/3 ml-auto text-base text-theme-sub-text lg:border-b border-theme-sub-text'>Building the worlds best marketing Your trusted partner for strategy, design, and dev.</p>
+                <p className='font-sportR lg:max-w-2/3 ml-auto text-base text-theme-sub-text lg:border-b border-theme-sub-text'><PTextFadeUp text={' Building the worlds best marketing Your trusted partner for strategy, design, and dev.'}/></p>
                 </div>
             </div>
             <div className="navs_prevs text-end flex justify-end gap-4 mt-10">
@@ -30,7 +61,7 @@ export default function WhyChoose() {
                     <Image className='-rotate-180 block' src={arrowLight} alt='arrow light'/>
                 </button>
             </div>
-            <div className="choose_box mt-10 ">
+            <motion.div variants={container} initial={'hidden'} whileInView={'visible'} transition={{duration:1.4}} viewport={{once:1,amount:.8}} className=" choose_box mt-10 ">
                 <Swiper
                 modules={[Autoplay]}
                 spaceBetween={30}
@@ -61,15 +92,15 @@ export default function WhyChoose() {
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 onSlideChange={() => console.log('slide change')}
                 >
-                <SwiperSlide><ChooseCard icon={<DiReact/>} title={'HTML & CSS'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
-                <SwiperSlide><ChooseCard icon={<DiReact/>} title={'Javascript'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
-                <SwiperSlide><ChooseCard icon={<DiReact/>} title={'PHP & Laravel'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
-                <SwiperSlide><ChooseCard icon={<DiReact/>} title={'Webflow'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
-                <SwiperSlide><ChooseCard icon={<DiReact/>} title={'Wordpress'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
-                <SwiperSlide><ChooseCard icon={<DiReact/>} title={'Shopify'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
-                <SwiperSlide><ChooseCard icon={<DiReact/>} title={'Webflow'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
+                <SwiperSlide><ChooseCard variant={item} icon={<DiReact/>} title={'HTML & CSS'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
+                <SwiperSlide><ChooseCard variant={item} icon={<DiReact/>} title={'Javascript'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
+                <SwiperSlide><ChooseCard variant={item} icon={<DiReact/>} title={'PHP & Laravel'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
+                <SwiperSlide><ChooseCard variant={item} icon={<DiReact/>} title={'Webflow'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
+                <SwiperSlide><ChooseCard variant={item} icon={<DiReact/>} title={'Wordpress'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
+                <SwiperSlide><ChooseCard variant={item} icon={<DiReact/>} title={'Shopify'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
+                <SwiperSlide><ChooseCard variant={item} icon={<DiReact/>} title={'Webflow'} description={'Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis'}/></SwiperSlide>
                 </Swiper>
-            </div>
+            </motion.div>
         </div>
      </section>
     </>

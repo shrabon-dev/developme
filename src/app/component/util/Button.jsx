@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Button({ img, icon, txt, mode,isScroll,type }) {
   // Define color classes based on mode
@@ -16,7 +18,7 @@ export default function Button({ img, icon, txt, mode,isScroll,type }) {
   return (
      
       type == 'button' ? 
-         <button
+         <motion.button initial={{scale:.5,opacity:0}} whileInView={{scale:1,opacity:1}} viewport={{once:1,amount:.4}} transition={{type:'spring',duration:.4}}
       className={`inline-flex cursor-pointer items-center border-2 gap-2 ${borderColor} pr-4 py-1 bg-transparent ${textColor} rounded-full 
         ${hoverBgColor} after:z-[-1] after:opacity-0  hover:after:opacity-100 after:w-0 group hover:after:w-full 
         after:h-full after:content-[''] after:duration-700 relative after:absolute after:top-0 after:left-0 
@@ -34,9 +36,9 @@ export default function Button({ img, icon, txt, mode,isScroll,type }) {
         </span>
       )}
       <span className="font-sportR font-normal text-xs lg:text-base">{txt}</span>
-    </button>
+    </motion.button>
       :
-         <a
+         <motion.a initial={{scale:.5,opacity:0}} whileInView={{scale:1,opacity:1}}  viewport={{once:1,amount:.4}} transition={{type:'spring',duration:.4}} 
       className={`inline-flex cursor-pointer items-center border-2 gap-2 ${borderColor} pr-4 py-1 bg-transparent ${textColor} rounded-full 
         ${hoverBgColor} after:z-[-1] after:opacity-0  hover:after:opacity-100 after:w-0 group hover:after:w-full 
         after:h-full after:content-[''] after:duration-700 relative after:absolute after:top-0 after:left-0 
@@ -54,7 +56,7 @@ export default function Button({ img, icon, txt, mode,isScroll,type }) {
         </span>
       )}
       <span className="font-sportR font-normal text-xs lg:text-base">{txt}</span>
-    </a>
+    </motion.a>
     
  
   )
